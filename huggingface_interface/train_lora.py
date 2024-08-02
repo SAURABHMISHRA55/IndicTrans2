@@ -1,4 +1,3 @@
-%%writefile IndicTrans2/huggingface_interface/train_lora.py
 import os
 import argparse
 import pandas as pd
