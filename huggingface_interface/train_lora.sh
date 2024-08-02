@@ -4,7 +4,7 @@ data_dir=${1:-"en-indic-exp"}
 model_name=${2:-"ai4bharat/indictrans2-en-indic-dist-200M"}
 output_dir=${3:-"output"}
 src_lang_list=${4:-"eng_Latn"}
-tgt_lang_list=${5:-"asm_Beng,ben_Beng,guj_Gujr,hin_Deva,kan_Knda,mal_Mlym,mar_Deva,npi_Deva,ory_Orya,pan_Guru,tam_Taml,tel_Telu,urd_Arab"}
+tgt_lang_list=${5:-"kan_Knda,mal_Mlym,mar_Deva,npi_Deva,ory_Orya,pan_Guru,tam_Taml,tel_Telu,urd_Arab"}
 
 python3 train_lora.py \
     --data_dir $data_dir \
