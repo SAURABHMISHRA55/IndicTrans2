@@ -1,4 +1,3 @@
-%%writefile IndicTrans2/huggingface_interface/example.py
 import sys
 import os
 import torch
