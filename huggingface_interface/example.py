@@ -48,7 +48,7 @@ flores_codes = {
     "mni_Beng": "bn",
     "mni_Mtei": "hi",
     "npi_Deva": "ne",
-    "ory_Orya": "or",
+    "ory_Orya": "sat",
     "pan_Guru": "pa",
     "san_Deva": "hi",
     "sat_Olck": "or",
