@@ -1,4 +1,3 @@
-%%writefile IndicTrans2/huggingface_interface/train_lora.sh
 export CUDA_VISIBLE_DEVICES=0
 
 data_dir=${1:-"/kaggle/input/english-santali-for-parameter-tuning/en-santali-exp"}
