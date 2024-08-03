@@ -1,3 +1,4 @@
+%%writefile IndicTrans2/huggingface_interface/train_lora.py
 import os
 import argparse
 import pandas as pd
@@ -30,7 +31,7 @@ def get_arg_parse():
     parser.add_argument("--max_steps", type=int, default=1000000)
     parser.add_argument("--grad_accum_steps", type=int, default=4)
     parser.add_argument("--warmup_steps", type=int, default=4000)
-    parser.add_argument("--warmup_ratio", type=int, default=0.0)
+    parser.add_argument("--warmup_ratio", type=float, default=0.0)
     parser.add_argument("--max_grad_norm", type=float, default=1.0)
     parser.add_argument("--learning_rate", type=float, default=5e-4)
     parser.add_argument("--weight_decay", type=float, default=0.0)
@@ -48,7 +49,7 @@ def get_arg_parse():
     parser.add_argument("--lora_dropout", type=float, default=0.1)
     parser.add_argument("--lora_r", type=int, default=16)
     parser.add_argument("--lora_alpha", type=int, default=32)
-    parser.add_argument("--report_to", type.str, default="none", choices=["wandb", "tensorboard", "azure_ml", "none"])
+    parser.add_argument("--report_to", type=str, default="none", choices=["wandb", "tensorboard", "azure_ml", "none"])
     parser.add_argument("--patience", type=int, default=5)
     parser.add_argument("--threshold", type=float, default=1e-3)
     return parser
