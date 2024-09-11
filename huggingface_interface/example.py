@@ -9,7 +9,7 @@ from nltk import sent_tokenize
 from indicnlp.tokenize.sentence_tokenize import sentence_split, DELIM_PAT_NO_DANDA
 from peft import PeftModel
 
-en_indic_ckpt_dir = "ai4bharat/indictrans2-en-indic-1B"  # Base model checkpoint directory
+en_indic_ckpt_dir = "ai4bharat/indictrans2-en-indic-dist-200M"  # Base model checkpoint directory
 lora_ckpt_dir = "/kaggle/working/output"  # Path to the fine-tuned LoRA checkpoint
 BATCH_SIZE = 4
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
